@@ -4,8 +4,6 @@ function addScript() {
     style.setAttribute("href", "https://assets.koolcenter.com/linkease-navigation-script/assets/main.css?v=2");
 
     var script = document.createElement("script");
-    script.setAttribute("type", "text/javascript");
-    script.setAttribute("defer", "true");
     script.setAttribute("src", "https://assets.koolcenter.com/linkease-navigation-script/assets/main.js?v=2");
     document.head.appendChild(style)
     document.head.appendChild(script)
