@@ -114,6 +114,30 @@ function addScript() {
                     }
                 ]
                 break
+            default:
+                menus = [
+                    {
+                        icon: "qq",
+                        title: "QQ交流群",
+                        qrcode: "https://assets.koolcenter.com/linkease/linkease_qq_qrcode.png",
+                        email: "",
+                        text: ""
+                    },
+                    {
+                        icon: "wechat",
+                        title: "微信交流群",
+                        qrcode: "",
+                        email: "",
+                        text: "请在易有云app或DDNSTO控制台查看"
+                    },
+                    {
+                        icon: "email",
+                        title: "商务合作邮箱",
+                        qrcode: "",
+                        email: "admin@linkease.com",
+                        text: ""
+                    }
+                ]
         }
         window.NewLinkeaseNavigation({
             menus: menus
