@@ -115,7 +115,7 @@ function addScript() {
                 ]
                 break
         }
-        window.initLinkeaseNavigationFunc({
+        window.NewLinkeaseNavigation({
             menus: menus
         })
     }
