@@ -4,7 +4,7 @@
     "cover": "https://assets.koolcenter.com/koolcenter/activity/R68s_activity_cover.png",
     "link": "https://mp.weixin.qq.com/s/Qu_MyfIGNrRVlaKuf1d73A",
     "title": "【团购】电犀牛R66s/R68s 大降1xx元",
-    "ongoing": true
+    "ongoing": false
   },
   {
     "index": 1,
