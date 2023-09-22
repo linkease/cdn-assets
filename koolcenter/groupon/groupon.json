@@ -1,39 +1,40 @@
 [
    {
     "index": 0,
+    "cover": "https://assets.koolcenter.com/koolcenter/activity/AX89X_activity_cover.png",
+    "link": "https://mp.weixin.qq.com/s/e1HT7NEgq5ubqrAhCZGa9w",
+    "title": "【抢购】华硕RT-AX89X路由器WIFI6高通四核超强B2版本你值得拥有！",
+    "ongoing": true
+  },
+   {
+    "index": 1,
     "cover": "https://assets.koolcenter.com/koolcenter/activity/AX6000_activity_cover.png",
     "link": "https://mp.weixin.qq.com/s/BTy-Zl_1zBUExdeN4RG49g",
     "title": "【抢购】华硕TX-AX6000 天选路由器双2.5G口直降150元",
     "ongoing": false
   },
    {
-    "index": 1,
+    "index": 2,
     "cover": "https://assets.koolcenter.com/koolcenter/activity/RT-AX86U-PRO_activity_cover.png",
     "link": "https://mp.weixin.qq.com/s/PDNLGryUSUfOq8jCwTB4og",
     "title": "【抢购】华硕RT-AX86U PRO双频AX5700路由器升级PRO版来啦！",
     "ongoing": false
   },
    {
-    "index": 2,
+    "index": 3,
     "cover": "https://assets.koolcenter.com/koolcenter/activity/RT-AX89X_activity_cover.png",
     "link": "https://mp.weixin.qq.com/s/sqAx_hgTaHnv92gW7IS-jg",
     "title": "【抢购】华硕RT-AX89X路由器WIFI6博通四核超强B2版本",
     "ongoing": false
   },
    {
-    "index": 3,
+    "index": 4,
     "cover": "https://assets.koolcenter.com/koolcenter/activity/pro_activity_cover.png",
     "link": "https://mp.weixin.qq.com/s/GMlUoyRkoZroSIXiDvQ7CQ",
     "title": "【抢购】超高性价比！华硕 TUF小旋风Pro 双2.5G电竞路由器",
     "ongoing": false
   },
-   {
-    "index": 4,
-    "cover": "https://assets.koolcenter.com/koolcenter/activity/as6704t_activity_cover.png",
-    "link": "https://mp.weixin.qq.com/s/NS3jTD_5mYG-SCxUC7i2NA",
-    "title": "【抢购】华硕AS6704T超强双2.5G口/4盘位/4*M.2四核N5105处理器专业NAS",
-    "ongoing": false
-  }
+
  
   
 ]
