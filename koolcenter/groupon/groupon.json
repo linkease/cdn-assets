@@ -1,7 +1,7 @@
 [
     {
     "index": 0,
-    "cover": "https://assets.koolcenter.com/koolcenter/activity/RT-AX88U PRO_activity_cover.png",
+    "cover": "https://assets.koolcenter.com/koolcenter/activity/RT-AX88U_PRO_activity_cover.png",
     "link": "https://mp.weixin.qq.com/s/uUGLGKWwK1w92XMc-gnPlg",
     "title": "【抢购】华硕RT-AX88U PRO WIFI6 2.5G路由器 火热开抢",
     "ongoing": true
@@ -34,5 +34,5 @@
     "link": "https://mp.weixin.qq.com/s/PDNLGryUSUfOq8jCwTB4og",
     "title": "【抢购】华硕RT-AX86U PRO双频AX5700路由器升级PRO版来啦！",
     "ongoing": false
-  },
+  }
 ]
