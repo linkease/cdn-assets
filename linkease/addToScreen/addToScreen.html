@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+        <meta name="apple-mobile-web-app-title" content="">
+        
+        <link rel="apple-touch-icon-precomposed" href="data:image/jpeg;base64,imageData"/>
+        <title>title</title>
+        
+    </head>
+    <script>document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 375 + "px"</script>
+    <style>
+        * { margin: 0; padding: 0 }
+        body, html { height: 100%; width: 100%; overflow: hidden; background: #f3f2f2; text-align: center }
+        .main { color: #333; text-align: center }
+        .subject { margin-top: 1rem; font-size: .2rem }
+        .guide { width: 100%; position: absolute; left: 0; bottom: .3rem }
+        .guide .content { position: relative; z-index: 20; width: 3.5rem; padding-top: .16rem; padding-bottom: .06rem; margin: 0 auto; border-radius: .04rem; box-shadow: 0 6px 15px rgba(0, 0, 0, .13); background: #fff; font-size: .14rem }
+        .guide .tips { position: relative; z-index: 20 }
+        .guide .icon { width: .2rem; height: .24rem; margin: 0 .035rem .02rem; vertical-align: bottom }
+        .guide .toolbar { width: 100%; height: auto; margin-top: -.12rem; position: relative; z-index: 10 }
+        .guide .arrow { width: .27rem; height: auto; position: absolute; left: 50%; bottom: -.26rem; margin-left: -.135rem; z-index: 10 }
+        .middle_tips{color:#999; font-size: 30px; margin-top: 100px; text-align: center}
+        .middle_appname{ font-size: 30px; margin-top: 30px; text-align: center}
+        .middle_enter{width:100%; height:64px;background-color:#036DB3;font-size: 30px;color:white}
+        .middle_icon { width: 30%; height: auto; margin: 0 .035rem .02rem; vertical-align: bottom }
+    </style>
+    <body>
+        <a id="redirect" href=""></a>
+        <div id="middle_container" class="backguide">
+            <div class="middle_tips">你即将进入</div>
+            <img class="middle_icon" src="https://assets.koolcenter.com/linkease/icon/linkease.png"></img>
+            <div class="middle_appname" id="appname"></div>
+            <button class="middle_enter" onclick="jumpSchema()">立即进入</button>
+          </div>
+        <div id="jump_container">
+            <div class="main">
+                <div class="subject">添加快捷功能到桌面</div>
+            </div>
+            <div class="guide">
+                <div class="content">
+                    <p class="tips">
+                    点击下方工具栏上的<img class="icon" src="https://assets.koolcenter.com/linkease/addToScreen/addToScreen_1.png">
+                    </p>
+                    <p class="tips">
+                        并选择<img class="icon" src="https://assets.koolcenter.com/linkease/addToScreen/addToScreen_2.png">“<strong>添加到主屏幕</strong>”
+                    </p>
+                    <img class="toolbar" src="https://assets.koolcenter.com/linkease/addToScreen/addToScreen_3.jpeg">
+                    <img class="arrow" src="https://assets.koolcenter.com/linkease/addToScreen/addToScreen_4.png">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+
+    // 请求HTML内容并显示
+    fetch('your-html-file.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('content').innerHTML = html;
+            });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const titleParam = urlParams.get('name');
+    const schemeParam = urlParams.get('scheme');
+
+    // 修改网页标题
+    if (titleParam) {
+        document.title = titleParam;
+        // // 修改meta描述
+        document.getElementById('appname').textContent = titleParam;
+        const metaDescription = document.querySelector('meta[name="apple-mobile-web-app-title"]');
+        if (metaDescription) {
+            metaDescription.setAttribute('content', titleParam);
+        }
+    }
+    
+    // 修改页面内容
+    if (schemeParam) {
+        document.getElementById('redirect').href = schemeParam;
+    }
+
+    function jumpSchema() {
+        var element = document.getElementById('redirect');
+        var event = document.createEvent('MouseEvents');
+        event.initEvent('click', true, true, document.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+        document.body.style.backgroundColor = '#FFFFFF';
+        setTimeout(function() { element.dispatchEvent(event); }, 25);
+    }
+    
+    if (window.navigator.standalone) {
+        
+
+        var middle_element = document.getElementById('middle_container');
+        var jump_element = document.getElementById('jump_container');
+        
+        middle_element.style.display = "inline";
+        jump_element.style.display = "none"
+        
+        var element = document.getElementById('redirect');
+        var event = document.createEvent('MouseEvents');
+        event.initEvent('click', true, true, document.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+        document.body.style.backgroundColor = '#FFFFFF';
+        setTimeout(function() { element.dispatchEvent(event); }, 25);
+        
+    } else {
+        
+        var middle_element = document.getElementById('middle_container');
+        var jump_element = document.getElementById('jump_container');
+        
+        middle_element.style.display = "none";
+        jump_element.style.display = "inline";
+    }
+
+</script>
