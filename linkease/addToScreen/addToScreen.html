@@ -83,7 +83,8 @@
     
     // 修改页面内容
     if (schemeParam) {
-        document.getElementById('redirect').href = schemeParam;
+        const decodedScheme = decodeURIComponent(schemeParam);
+        document.getElementById('redirect').href = `linkease://${decodedScheme}`;
     }
 
     function jumpSchema() {
