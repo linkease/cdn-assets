@@ -1,0 +1,252 @@
+{
+	"root": {
+		"id": "drsqduph",
+		"text": "玩转Docker",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "dxerjdbv",
+				"text": "Linux 系统支持的特性",
+				"notes": null,
+				"side": "right"
+			},
+			{
+				"id": "fdrocdow",
+				"text": "为何用 Docker 而不用虚拟机？",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "vmwsrqqi",
+						"text": "使用体验的区别",
+						"notes": null,
+						"children": [
+							{
+								"id": "jugizypp",
+								"text": "Docker就像一个整体软件，立刻安装立刻使用",
+								"notes": null
+							},
+							{
+								"id": "bguqoqjq",
+								"text": "虚拟机得安装系统，很慢很慢",
+								"notes": null
+							}
+						]
+					},
+					{
+						"id": "ubjvskzn",
+						"text": "本质原理的区别",
+						"notes": null,
+						"children": [
+							{
+								"id": "ufpyiwjv",
+								"text": "Docker跟宿主共享内核",
+								"notes": null
+							},
+							{
+								"id": "vkkdrgbh",
+								"text": "共享内核，意味着性能更强",
+								"notes": null
+							}
+						]
+					},
+					{
+						"id": "pdyogosv",
+						"text": "共同点",
+						"notes": null,
+						"children": [
+							{
+								"id": "oxngaikj",
+								"text": "镜像是什么？",
+								"notes": null,
+								"children": [
+									{
+										"id": "inhnozwr",
+										"text": "虚拟机有镜像",
+										"notes": null
+									},
+									{
+										"id": "ekqeuuzq",
+										"text": "Docker也有镜像",
+										"notes": null
+									},
+									{
+										"id": "sdejvxiu",
+										"text": "镜像：可以跑的操作系统",
+										"notes": null
+									}
+								]
+							},
+							{
+								"id": "qvkgdrrb",
+								"text": "下载镜像",
+								"notes": null,
+								"children": [
+									{
+										"id": "xifzjizd",
+										"text": "虚拟机很难，FastPVE可以加速下载，还是没得 Docker 牛逼",
+										"notes": null
+									},
+									{
+										"id": "sardkdom",
+										"text": "Docker 下载镜像很方便",
+										"notes": null,
+										"children": [
+											{
+												"id": "ukazehhh",
+												"text": "docker hub 专门下载镜像",
+												"notes": null
+											},
+											{
+												"id": "wcqyigca",
+												"text": "kspeeder 加速下载镜像",
+												"notes": null
+											}
+										]
+									}
+								]
+							},
+							{
+								"id": "xapmuffb",
+								"text": "Snapshot",
+								"notes": null,
+								"children": [
+									{
+										"id": "wtjcbegk",
+										"text": "docker 用的 overlay 文件系统",
+										"notes": null
+									},
+									{
+										"id": "qijwotul",
+										"text": "虚拟机一般就是自己的独特的文件格式",
+										"notes": null
+									},
+									{
+										"id": "llcncpxo",
+										"text": "虚拟机的快照很牛逼，虚拟机挂了，可以用快照很快恢复",
+										"notes": null
+									},
+									{
+										"id": "kjxnldtw",
+										"text": "Docker 可能吧宿主搞挂，然后无法恢复",
+										"notes": null
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "xmvfbdqu",
+				"text": "iStoreOS的面版选择",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "ievfvhej",
+						"text": "1panel",
+						"notes": null
+					},
+					{
+						"id": "mumbcdwj",
+						"text": "dpanel",
+						"notes": null
+					}
+				]
+			},
+			{
+				"id": "vppatnfq",
+				"text": "Linux",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "dkulkazr",
+						"text": "内核",
+						"notes": null,
+						"children": [
+							{
+								"id": "iqjyqogj",
+								"text": "任务调度",
+								"notes": null
+							},
+							{
+								"id": "vcsyusqr",
+								"text": "驱动",
+								"notes": null
+							},
+							{
+								"id": "yfhrslnf",
+								"text": "硬件管理",
+								"notes": null
+							}
+						]
+					},
+					{
+						"id": "qzlkysog",
+						"text": "用户空间",
+						"notes": null,
+						"children": [
+							{
+								"id": "gfglotxd",
+								"text": "ls",
+								"notes": null
+							},
+							{
+								"id": "phganadf",
+								"text": "cat",
+								"notes": null
+							},
+							{
+								"id": "hhrznpxa",
+								"text": "ssh",
+								"notes": null
+							},
+							{
+								"id": "pjuumyts",
+								"text": "等等各种应用程序",
+								"notes": null
+							}
+						]
+					},
+					{
+						"id": "hirhnjtb",
+						"text": "但是 Linux 可以有多个用户空间<br>",
+						"notes": null,
+						"children": [
+							{
+								"id": "umyyrpoc",
+								"text": "namespace 0 就是默认的",
+								"notes": null
+							},
+							{
+								"id": "vspyjdfp",
+								"text": "而 Docker 就是非&nbsp; 0 的用户空间",
+								"notes": null,
+								"children": [
+									{
+										"id": "nhcjifsb",
+										"text": "独立的系统",
+										"notes": null
+									},
+									{
+										"id": "ileqjozl",
+										"text": "独立的 ls cat ssh ifconfig",
+										"notes": null
+									}
+								]
+							},
+							{
+								"id": "nejkndnt",
+								"text": "简单理解：每个用户空间相当于模拟了一个操作系统",
+								"notes": null
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
