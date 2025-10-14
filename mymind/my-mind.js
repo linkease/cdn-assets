@@ -1310,16 +1310,50 @@
     select7.append(...options);
   }
 
+  // .js/format/format.js
+  var Format = class {
+    constructor(id, label) {
+      this.id = id;
+      this.label = label;
+      repo5.set(id, this);
+    }
+    get option() {
+      return new Option(this.label, this.id);
+    }
+  };
+  var repo5 = new Map();
+  function getByProperty(property, value) {
+    let filtered = [...repo5.values()].filter((format2) => format2[property] == value);
+    return filtered[0] || null;
+  }
+  function getByName(name) {
+    let index2 = name.lastIndexOf(".");
+    if (index2 == -1) {
+      return null;
+    }
+    let extension = name.substring(index2 + 1).toLowerCase();
+    return getByProperty("extension", extension);
+  }
+  function getByMime(mime) {
+    return getByProperty("mime", mime);
+  }
+  function nl2br(str) {
+    return str.replace(/\n/g, "<br/>");
+  }
+  function br2nl(str) {
+    return str.replace(/<br\s*\/?>/g, "\n");
+  }
+
   // .js/backend/backend.js
   var Backend = class {
     constructor(id) {
       this.id = id;
-      repo5.set(id, this);
+      repo6.set(id, this);
     }
     reset() {
     }
   };
-  var repo5 = new Map();
+  var repo6 = new Map();
 
   // .js/backend/local.js
   var Local = class extends Backend {
@@ -1355,40 +1389,6 @@
       }
     }
   };
-
-  // .js/format/format.js
-  var Format = class {
-    constructor(id, label) {
-      this.id = id;
-      this.label = label;
-      repo6.set(id, this);
-    }
-    get option() {
-      return new Option(this.label, this.id);
-    }
-  };
-  var repo6 = new Map();
-  function getByProperty(property, value) {
-    let filtered = [...repo6.values()].filter((format) => format[property] == value);
-    return filtered[0] || null;
-  }
-  function getByName(name) {
-    let index2 = name.lastIndexOf(".");
-    if (index2 == -1) {
-      return null;
-    }
-    let extension = name.substring(index2 + 1).toLowerCase();
-    return getByProperty("extension", extension);
-  }
-  function getByMime(mime) {
-    return getByProperty("mime", mime);
-  }
-  function nl2br(str) {
-    return str.replace(/\n/g, "<br/>");
-  }
-  function br2nl(str) {
-    return str.replace(/<br\s*\/?>/g, "\n");
-  }
 
   // .js/ui/backend/local.js
   var LocalUI = class extends BackendUI {
@@ -1441,7 +1441,7 @@
     }
     save() {
       let json = currentMap.toJSON();
-      let data = repo6.get("native").to(json);
+      let data = repo5.get("native").to(json);
       try {
         this.backend.save(data, currentMap.id, currentMap.name);
         this.saveDone();
@@ -1452,7 +1452,7 @@
     load(id = this.list.value) {
       try {
         let data = this.backend.load(id);
-        var json = repo6.get("native").from(data);
+        var json = repo5.get("native").from(data);
         this.loadDone(json);
       } catch (e) {
         this.error(e);
@@ -1855,10 +1855,10 @@
       this.go.textContent = mode2 == "save" ? "Save" : "Browse";
     }
     save() {
-      let format = repo6.get(this.format.value);
+      let format2 = repo5.get(this.format.value);
       var json = currentMap.toJSON();
-      var data = format.to(json);
-      var name = currentMap.name + "." + format.extension;
+      var data = format2.to(json);
+      var name = currentMap.name + "." + format2.extension;
       try {
         this.backend.save(data, name);
         this.saveDone();
@@ -1869,8 +1869,8 @@
     async load() {
       try {
         let data = await this.backend.load();
-        let format = getByName(data.name) || repo6.get("native");
-        let json = format.from(data.data);
+        let format2 = getByName(data.name) || repo5.get("native");
+        let json = format2.from(data.data);
         this.loadDone(json);
       } catch (e) {
         this.error(e);
@@ -1940,11 +1940,11 @@ ${text}`);
         if (url.charAt(url.length - 1) != "/") {
           url += "/";
         }
-        url += `${map.name}.${repo6.get("native").extension}`;
+        url += `${map.name}.${repo5.get("native").extension}`;
       }
       this.current = url;
       let json = map.toJSON();
-      let data = repo6.get("native").to(json);
+      let data = repo5.get("native").to(json);
       try {
         await this.backend.save(data, url);
         this.saveDone();
@@ -1960,7 +1960,7 @@ ${text}`);
       localStorage.setItem(`${this.prefix}.url`, this.url.value);
       try {
         let data = await this.backend.load(url);
-        let json = repo6.get("native").from(data);
+        let json = repo5.get("native").from(data);
         this.loadDone(json);
       } catch (e) {
         this.error(e);
@@ -1973,7 +1973,7 @@ ${text}`);
     constructor() {
       super("image");
     }
-    async save(format) {
+    async save(format2) {
       const serializer = new XMLSerializer();
       const encoder = new TextEncoder();
       let xmlStr = serializer.serializeToString(currentMap.node);
@@ -1981,7 +1981,7 @@ ${text}`);
       let byteString = [...encoded].map((byte) => String.fromCharCode(byte)).join("");
       let base64 = btoa(byteString);
       let svgUrl = `data:image/svg+xml;base64,${base64}`;
-      switch (format) {
+      switch (format2) {
         case "svg":
           return svgUrl;
         case "png":
@@ -2115,9 +2115,9 @@ ${text}`);
       await connect();
       var token = gapi.auth.getToken();
       var mimeTypes = ["application/json; charset=UTF-8", "application/json"];
-      [...repo6.values()].forEach((format) => {
-        if (format.mime) {
-          mimeTypes.unshift(format.mime);
+      [...repo5.values()].forEach((format2) => {
+        if (format2.mime) {
+          mimeTypes.unshift(format2.mime);
         }
       });
       var view = new google.picker.DocsView(google.picker.ViewId.DOCS).setMimeTypes(mimeTypes.join(",")).setMode(google.picker.DocsViewMode.LIST);
@@ -2190,15 +2190,15 @@ ${text}`);
     }
     async save() {
       setThrobber(true);
-      let format = repo6.get(this.format.value);
+      let format2 = repo5.get(this.format.value);
       let json = currentMap.toJSON();
-      let data = format.to(json);
+      let data = format2.to(json);
       let name = currentMap.name;
       let mime = "text/plain";
-      if (format.mime) {
-        mime = format.mime;
+      if (format2.mime) {
+        mime = format2.mime;
       } else {
-        name += "." + format.extension;
+        name += "." + format2.extension;
       }
       try {
         await this.backend.save(data, name, mime);
@@ -2224,8 +2224,8 @@ ${text}`);
       setThrobber(true);
       try {
         let data = await this.backend.load(id);
-        let format = getByMime(data.mime) || getByName(data.name) || repo6.get("native");
-        let json = format.from(data.data);
+        let format2 = getByMime(data.mime) || getByName(data.name) || repo5.get("native");
+        let json = format2.from(data.data);
         this.loadDone(json);
       } catch (e) {
         this.error(e);
@@ -2578,7 +2578,7 @@ ${text}`);
     hide2();
     setCurrentBackend(publisher);
   }
-  function restore() {
+  async function restore() {
     let parts = {};
     location.search.substring(1).split("&").forEach((item) => {
       let keyvalue = item.split("=").map(decodeURIComponent);
@@ -2610,6 +2610,45 @@ ${text}`);
       } catch (e) {
       }
       return;
+    }
+    if (parts.p) {
+      try {
+        let url = new URL(parts.p, location.href);
+        if (url.origin === location.origin) {
+          setThrobber(true);
+          let resp = await fetch(url.href);
+          if (!resp.ok) {
+            throw new Error(`Failed to fetch ${url.href}: ${resp.status}`);
+          }
+          let text = await resp.text();
+          let json = null;
+          let fmt = getByName(url.pathname);
+          if (fmt) {
+            json = fmt.from(text);
+          } else {
+            try {
+              json = JSON.parse(text);
+            } catch (e) {
+              let plain = repo5.get("plaintext");
+              if (plain) {
+                json = plain.from(text);
+              }
+            }
+          }
+          if (json) {
+            showMap(Map2.fromJSON(json));
+            setThrobber(false);
+            return;
+          } else {
+            throw new Error("Unsupported or unrecognized file format");
+          }
+        } else {
+        }
+      } catch (e) {
+        setThrobber(false);
+        console.error(e);
+        alert(`Failed to load map: ${e instanceof Error ? e.message : e}`);
+      }
     }
     setThrobber(false);
   }
@@ -4224,7 +4263,7 @@ ${text}`);
         return;
     }
     let json = storedItem.toJSON();
-    let plaintext = repo6.get("plaintext").to(json);
+    let plaintext = repo5.get("plaintext").to(json);
     e.clipboardData.setData("text/plain", plaintext);
     mode = e.type;
   }
@@ -4237,7 +4276,7 @@ ${text}`);
     if (!pasted) {
       return;
     }
-    if (storedItem && pasted == repo6.get("plaintext").to(storedItem.toJSON())) {
+    if (storedItem && pasted == repo5.get("plaintext").to(storedItem.toJSON())) {
       pasteItem(storedItem, currentItem);
     } else {
       pastePlaintext(pasted, currentItem);
@@ -4271,7 +4310,7 @@ ${text}`);
     }
   }
   function pastePlaintext(plaintext, targetItem) {
-    let json = repo6.get("plaintext").from(plaintext);
+    let json = repo5.get("plaintext").from(plaintext);
     let map = Map2.fromJSON(json);
     let root = map.root;
     if (root.text) {
