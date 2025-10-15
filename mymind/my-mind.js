@@ -2612,6 +2612,7 @@ ${text}`);
       return;
     }
     if (parts.p) {
+      setRestoring(true);
       try {
         let url = new URL(parts.p, location.href);
         if (url.origin === location.origin) {
@@ -2648,6 +2649,8 @@ ${text}`);
         setThrobber(false);
         console.error(e);
         alert(`Failed to load map: ${e instanceof Error ? e.message : e}`);
+      } finally {
+        setRestoring(false);
       }
     }
     setThrobber(false);
@@ -2803,7 +2806,6 @@ ${text}`);
       }
     });
     node10.addEventListener("click", onClick3);
-    restore();
   }
 
   // .js/command/command.js
@@ -4572,7 +4574,24 @@ ${text}`);
   var currentMap;
   var currentItem;
   var editing = false;
+  var restoring = false;
+  function setRestoring(v) {
+    restoring = v;
+  }
+  function getRestoring() {
+    return restoring;
+  }
   function showMap(map) {
+    try {
+      if (getRestoring()) {
+        let json = map.toJSON();
+        let isEmptyRoot = (!json.root.children || json.root.children.length === 0) && (typeof json.root.text === "string" && json.root.text.indexOf("My Mind Map") === 0);
+        if (isEmptyRoot) {
+          return;
+        }
+      }
+    } catch (e) {
+    }
     currentMap && currentMap.hide();
     reset();
     currentMap = map;
@@ -4619,6 +4638,11 @@ ${text}`);
     init13(port3);
     syncPort();
     showMap(new Map2());
+    try {
+      await restore();
+    } catch (e) {
+      console.error("io.restore() failed:", e);
+    }
   }
   function syncPort() {
     let portSize = [window.innerWidth - getWidth(), window.innerHeight];
