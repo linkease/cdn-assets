@@ -1,18 +1,18 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Chat bubble -->
-  <path d="M3 7C3 5.34315 4.34315 4 6 4H18C19.6569 4 21 5.34315 21 7V14C21 15.6569 19.6569 17 18 17H11L6.5 20.5C6.22386 20.7761 5.75 20.5791 5.75 20.2V17C4.23122 17 3 15.7688 3 14.25V7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
-  
-  <!-- Robot head -->
-  <rect x="9" y="8" width="6" height="5" rx="1" stroke="currentColor" stroke-width="1.2" fill="none"/>
-  
-  <!-- Robot antenna -->
-  <line x1="12" y1="8" x2="12" y2="6.5" stroke="currentColor" stroke-width="1.2"/>
-  <circle cx="12" cy="6" r="0.8" fill="currentColor"/>
-  
-  <!-- Robot eyes -->
-  <circle cx="10.5" cy="10" r="0.6" fill="currentColor"/>
-  <circle cx="13.5" cy="10" r="0.6" fill="currentColor"/>
-  
-  <!-- Robot mouth -->
-  <line x1="10.5" y1="11.5" x2="13.5" y2="11.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20.7930064px" viewBox="0 0 24 20.7930064" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-21.000000, -49.000000)">
+            <g id="编组-2" transform="translate(21.000000, 49.000000)">
+                <path d="M2,0 L22,0 C23.1045695,-2.02906125e-16 24,0.8954305 24,2 L24,15 C24,16.1045695 23.1045695,17 22,17 L11.5,17 L11.5,17 L5.38462132,20.76331 C5.29054974,20.8212002 5.16736037,20.7918694 5.10947016,20.6977978 C5.083424,20.6554728 5.07406877,20.6049666 5.08322739,20.5561206 L5.75,17 L5.75,17 L2,17 C0.8954305,17 -1.5440923e-16,16.1045695 0,15 L0,2 C-1.3527075e-16,0.8954305 0.8954305,5.7935996e-16 2,0 Z" id="矩形" fill="#061A35"></path>
+                <rect id="矩形" fill="#FC2B03" x="2" y="2" width="20" height="13" rx="2"></rect>
+                <rect id="矩形" fill="#061A35" x="7" y="6" width="10" height="7" rx="1"></rect>
+                <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="10" cy="9" r="1"></circle>
+                <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="14" cy="9" r="1"></circle>
+                <path d="M6,12 L6,7 C4.61928813,7 3.5,8.11928813 3.5,9.5 C3.5,10.8807119 4.61928813,12 6,12 Z" id="椭圆形" fill="#061A35"></path>
+                <path d="M20.5,12 L20.5,7 C19.1192881,7 18,8.11928813 18,9.5 C18,10.8807119 19.1192881,12 20.5,12 Z" id="椭圆形" fill="#061A35" transform="translate(19.250000, 9.500000) scale(-1, 1) translate(-19.250000, -9.500000) "></path>
+                <rect id="矩形" fill="#061A35" x="10.5" y="3" width="3" height="4" rx="1.5"></rect>
+            </g>
+        </g>
+    </g>
 </svg>
