@@ -1,20 +1,20 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Chip outline -->
-  <rect x="6" y="6" width="12" height="12" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"/>
-  
-  <!-- Chip pins - left side -->
-  <line x1="3" y1="8" x2="6" y2="8" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="3" y1="12" x2="6" y2="12" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="3" y1="16" x2="6" y2="16" stroke="currentColor" stroke-width="1.5"/>
-  
-  <!-- Chip pins - right side -->
-  <line x1="18" y1="8" x2="21" y2="8" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="18" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="18" y1="16" x2="21" y2="16" stroke="currentColor" stroke-width="1.5"/>
-  
-  <!-- Download arrow -->
-  <path d="M12 9V14M12 14L10 12M12 14L14 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  
-  <!-- Bottom line of arrow -->
-  <line x1="9.5" y1="15.5" x2="14.5" y2="15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="22px" viewBox="0 0 26 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-49.000000, -47.000000)">
+            <g id="编组" transform="translate(51.000000, 49.000000)">
+                <rect id="矩形" stroke="#FFFFFF" stroke-width="2" fill="#061A35" x="-1" y="-1" width="24" height="20" rx="2"></rect>
+                <rect id="矩形" fill="#FFBA06" x="2" y="2" width="18" height="14" rx="1"></rect>
+                <path d="M11,5 L11,11 M11,11 L9,8.6 M11,11 L13,8.6" id="形状" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="8" y1="12.5" x2="15" y2="12.5" id="路径" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="2" y1="6.5" x2="5" y2="6.5" id="路径" stroke="#061A35" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="18" y1="6.5" x2="21" y2="6.5" id="路径备份" stroke="#061A35" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="2" y1="9.5" x2="5" y2="9.5" id="路径" stroke="#061A35" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="18" y1="9.5" x2="21" y2="9.5" id="路径备份-2" stroke="#061A35" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="2" y1="12.5" x2="5" y2="12.5" id="路径" stroke="#061A35" stroke-width="1.5" stroke-linecap="round"></line>
+                <line x1="18" y1="12.5" x2="21" y2="12.5" id="路径备份-3" stroke="#061A35" stroke-width="1.5" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
 </svg>
