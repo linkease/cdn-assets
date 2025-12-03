@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="28px" height="24.7932873px" viewBox="0 0 28 24.7932873" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>编组 2</title>
-    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="画板" transform="translate(-19.000000, -47.000000)">
-            <g id="编组-2" transform="translate(21.000000, 49.000000)">
-                <path d="M22,-1 C22.8284271,-1 23.5784271,-0.664213562 24.1213203,-0.121320344 C24.6642136,0.421572875 25,1.17157288 25,2 L25,15 C25,15.8284271 24.6642136,16.5784271 24.1213203,17.1213203 C23.5784271,17.6642136 22.8284271,18 22,18 L11.7830422,18 L4.19483139,22.6696682 L4.64820814,18 L2,18 C1.17157288,18 0.421572875,17.6642136 -0.121320344,17.1213203 C-0.664213562,16.5784271 -1,15.8284271 -1,15 L-1,2 C-1,1.17157288 -0.664213562,0.421572875 -0.121320344,-0.121320344 C0.421572875,-0.664213562 1.17157288,-1 2,-1 Z" id="矩形" stroke="#FFFFFF" stroke-width="2" fill="#061A35"></path>
-                <rect id="矩形" fill="#FC2B03" x="2" y="2" width="20" height="13" rx="2"></rect>
-                <rect id="矩形" fill="#061A35" x="7" y="6" width="10" height="7" rx="1"></rect>
-                <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="10" cy="9" r="1"></circle>
-                <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="14" cy="9" r="1"></circle>
-                <path d="M6,12 L6,7 C4.61928813,7 3.5,8.11928813 3.5,9.5 C3.5,10.8807119 4.61928813,12 6,12 Z" id="椭圆形" fill="#061A35"></path>
-                <path d="M20.5,12 L20.5,7 C19.1192881,7 18,8.11928813 18,9.5 C18,10.8807119 19.1192881,12 20.5,12 Z" id="椭圆形" fill="#061A35" transform="translate(19.250000, 9.500000) scale(-1, 1) translate(-19.250000, -9.500000) "></path>
-                <rect id="矩形" fill="#061A35" x="10.5" y="3" width="3" height="4" rx="1.5"></rect>
-            </g>
-        </g>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1</title>
+    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形" fill="#D0D0D0" cx="24" cy="24" r="18"></circle>
+        <path d="M24,10 C31.7319865,10 38,16.2680135 38,24 C38,31.7319865 31.7319865,38 24,38 C16.2680135,38 10,31.7319865 10,24 C10,16.2680135 16.2680135,10 24,10 Z" id="矩形" fill="#FFFFFF"></path>
+        <path d="M24,12 C30.627417,12 36,17.372583 36,24 C36,30.627417 30.627417,36 24,36 C17.372583,36 12,30.627417 12,24 C12,17.372583 17.372583,12 24,12 Z" id="矩形" fill="#061A35"></path>
+        <rect id="矩形" fill="#FC2B03" x="14" y="14" width="20" height="20" rx="10"></rect>
+        <rect id="矩形" fill="#061A35" x="19" y="21" width="10" height="7" rx="1"></rect>
+        <rect id="矩形" fill="#061A35" x="19" y="29" width="10" height="2" rx="1"></rect>
+        <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="22" cy="24" r="1"></circle>
+        <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="26" cy="24" r="1"></circle>
+        <path d="M18,27 L18,22 C16.6192881,22 15.5,23.1192881 15.5,24.5 C15.5,25.8807119 16.6192881,27 18,27 Z" id="椭圆形" fill="#061A35"></path>
+        <path d="M32.5,27 L32.5,22 C31.1192881,22 30,23.1192881 30,24.5 C30,25.8807119 31.1192881,27 32.5,27 Z" id="椭圆形" fill="#061A35" transform="translate(31.250000, 24.500000) scale(-1, 1) translate(-31.250000, -24.500000) "></path>
+        <rect id="矩形" fill="#061A35" x="22.5" y="18" width="3" height="4" rx="1.5"></rect>
     </g>
 </svg>
