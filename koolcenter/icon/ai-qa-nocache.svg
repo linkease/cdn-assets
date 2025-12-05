@@ -2,16 +2,18 @@
 <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>1</title>
     <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="椭圆形" fill="#D0D0D0" cx="24" cy="24" r="18"></circle>
-        <path d="M24,10 C31.7319865,10 38,16.2680135 38,24 C38,31.7319865 31.7319865,38 24,38 C16.2680135,38 10,31.7319865 10,24 C10,16.2680135 16.2680135,10 24,10 Z" id="矩形" fill="#FFFFFF"></path>
-        <path d="M24,12 C30.627417,12 36,17.372583 36,24 C36,30.627417 30.627417,36 24,36 C17.372583,36 12,30.627417 12,24 C12,17.372583 17.372583,12 24,12 Z" id="矩形" fill="#061A35"></path>
-        <rect id="矩形" fill="#FC2B03" x="14" y="14" width="20" height="20" rx="10"></rect>
-        <rect id="矩形" fill="#061A35" x="19" y="21" width="10" height="7" rx="1"></rect>
-        <rect id="矩形" fill="#061A35" x="19" y="29" width="10" height="2" rx="1"></rect>
-        <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="22" cy="24" r="1"></circle>
-        <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="26" cy="24" r="1"></circle>
-        <path d="M18,27 L18,22 C16.6192881,22 15.5,23.1192881 15.5,24.5 C15.5,25.8807119 16.6192881,27 18,27 Z" id="椭圆形" fill="#061A35"></path>
-        <path d="M32.5,27 L32.5,22 C31.1192881,22 30,23.1192881 30,24.5 C30,25.8807119 31.1192881,27 32.5,27 Z" id="椭圆形" fill="#061A35" transform="translate(31.250000, 24.500000) scale(-1, 1) translate(-31.250000, -24.500000) "></path>
-        <rect id="矩形" fill="#061A35" x="22.5" y="18" width="3" height="4" rx="1.5"></rect>
+        <circle id="椭圆形" fill="#D0D0D0" cx="24" cy="24" r="20"></circle>
+        <g id="编组" transform="translate(7.000000, 7.000000)">
+            <path d="M17,0 C26.3888407,-1.72470207e-15 34,7.61115925 34,17 C34,26.3888407 26.3888407,34 17,34 C7.61115925,34 5.74900688e-16,26.3888407 0,17 C-1.14980138e-15,7.61115925 7.61115925,1.14980138e-15 17,0 Z" id="矩形" fill="#061A35"></path>
+            <rect id="矩形" fill="#FC2B03" x="3" y="3" width="29" height="29" rx="14.5"></rect>
+            <rect id="矩形" fill="#061A35" x="10" y="13" width="14" height="10" rx="1"></rect>
+            <rect id="矩形" fill="#061A35" x="10" y="25" width="14" height="3" rx="1"></rect>
+            <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="16.5" cy="17.5" r="1.5"></circle>
+            <path d="M19,20.5 C19.5522847,20.5 20,20.0522847 20,19.5 L18,19.5 C18,20.0522847 18.4477153,20.5 19,20.5 Z" id="椭圆形" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="21.5" cy="17.5" r="1.5"></circle>
+            <path d="M8,21 L8,14 C6.34314575,14 5,15.5670034 5,17.5 C5,19.4329966 6.34314575,21 8,21 Z" id="椭圆形" fill="#061A35"></path>
+            <path d="M29,21 L29,14 C27.3431458,14 26,15.5670034 26,17.5 C26,19.4329966 27.3431458,21 29,21 Z" id="椭圆形" fill="#061A35" transform="translate(27.500000, 17.500000) scale(-1, 1) translate(-27.500000, -17.500000) "></path>
+            <rect id="矩形" fill="#061A35" x="15" y="9" width="4" height="5" rx="1.5"></rect>
+        </g>
     </g>
 </svg>
