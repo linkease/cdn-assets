@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>1</title>
-    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="椭圆形" fill="#D0D0D0" cx="24" cy="24" r="20"></circle>
-        <g id="编组" transform="translate(7.000000, 7.000000)">
-            <path d="M17,0 C26.3888407,-1.72470207e-15 34,7.61115925 34,17 C34,26.3888407 26.3888407,34 17,34 C7.61115925,34 5.74900688e-16,26.3888407 0,17 C-1.14980138e-15,7.61115925 7.61115925,1.14980138e-15 17,0 Z" id="矩形" fill="#061A35"></path>
-            <rect id="矩形" fill="#FC2B03" x="3" y="3" width="29" height="29" rx="14.5"></rect>
-            <rect id="矩形" fill="#061A35" x="10" y="13" width="14" height="10" rx="1"></rect>
-            <rect id="矩形" fill="#061A35" x="10" y="25" width="14" height="3" rx="1"></rect>
-            <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="16.5" cy="17.5" r="1.5"></circle>
-            <path d="M19,20.5 C19.5522847,20.5 20,20.0522847 20,19.5 L18,19.5 C18,20.0522847 18.4477153,20.5 19,20.5 Z" id="椭圆形" fill="#FFFFFF" fill-rule="nonzero"></path>
-            <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="21.5" cy="17.5" r="1.5"></circle>
-            <path d="M8,21 L8,14 C6.34314575,14 5,15.5670034 5,17.5 C5,19.4329966 6.34314575,21 8,21 Z" id="椭圆形" fill="#061A35"></path>
-            <path d="M29,21 L29,14 C27.3431458,14 26,15.5670034 26,17.5 C26,19.4329966 27.3431458,21 29,21 Z" id="椭圆形" fill="#061A35" transform="translate(27.500000, 17.500000) scale(-1, 1) translate(-27.500000, -17.500000) "></path>
-            <rect id="矩形" fill="#061A35" x="15" y="9" width="4" height="5" rx="1.5"></rect>
-        </g>
+    <title>1备份</title>
+    <g id="1备份" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形" fill="#061A35" cx="24" cy="24" r="22"></circle>
+        <text id="AI" font-family="PingFangSC-Semibold, PingFang SC" font-size="30" font-weight="500" fill="#FFFFFF">
+            <tspan x="10" y="35">AI</tspan>
+        </text>
+        <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="11.5" cy="18.5" r="1.5"></circle>
+        <circle id="椭圆形" fill="#FFFFFF" fill-rule="nonzero" cx="28.5" cy="18.5" r="1.5"></circle>
     </g>
 </svg>

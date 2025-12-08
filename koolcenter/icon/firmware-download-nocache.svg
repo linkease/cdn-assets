@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>2</title>
-    <g id="2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="椭圆形" fill="#D0D0D0" cx="24" cy="24" r="20"></circle>
-        <g id="编组-2" transform="translate(7.000000, 7.000000)">
-            <path d="M17,0 C26.3888407,-1.72470207e-15 34,7.61115925 34,17 C34,26.3888407 26.3888407,34 17,34 C7.61115925,34 5.74900688e-16,26.3888407 0,17 C-1.14980138e-15,7.61115925 7.61115925,1.14980138e-15 17,0 Z" id="矩形" fill="#061A35"></path>
-            <path d="M16.8333333,2.83333333 L17.1666667,2.83333333 C24.8986532,2.83333333 31.1666667,9.10134684 31.1666667,16.8333333 L31.1666667,17.1666667 C31.1666667,24.8986532 24.8986532,31.1666667 17.1666667,31.1666667 L16.8333333,31.1666667 C9.10134684,31.1666667 2.83333333,24.8986532 2.83333333,17.1666667 L2.83333333,16.8333333 C2.83333333,9.10134684 9.10134684,2.83333333 16.8333333,2.83333333 Z" id="矩形" fill="#FFBA06"></path>
-            <g id="编组" transform="translate(5.666667, 8.500000)">
-                <rect id="矩形" fill="#061A35" x="1.41666667" y="0" width="19.8333333" height="17" rx="1"></rect>
-                <path d="M11.3333333,2.83333333 L11.3333333,11.3333333 M11.3333333,11.3333333 L8.5,7.93333333 M11.3333333,11.3333333 L14.1666667,7.93333333" id="形状" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <line x1="7.08333333" y1="13.4583333" x2="15.5833333" y2="13.4583333" id="路径" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"></line>
-                <line x1="0" y1="4.95833333" x2="4.25" y2="4.95833333" id="路径" stroke="#FFBA06" stroke-width="1.5" stroke-linecap="round"></line>
-                <line x1="18.4166667" y1="4.95833333" x2="22.6666667" y2="4.95833333" id="路径备份" stroke="#FFBA06" stroke-width="1.5" stroke-linecap="round"></line>
-                <line x1="0" y1="9.20833333" x2="4.25" y2="9.20833333" id="路径" stroke="#FFBA06" stroke-width="1.5" stroke-linecap="round"></line>
-                <line x1="18.4166667" y1="9.20833333" x2="22.6666667" y2="9.20833333" id="路径备份-2" stroke="#FFBA06" stroke-width="1.5" stroke-linecap="round"></line>
-                <line x1="0" y1="13.4583333" x2="4.25" y2="13.4583333" id="路径" stroke="#FFBA06" stroke-width="1.5" stroke-linecap="round"></line>
-                <line x1="18.4166667" y1="13.4583333" x2="22.6666667" y2="13.4583333" id="路径备份-3" stroke="#FFBA06" stroke-width="1.5" stroke-linecap="round"></line>
-            </g>
+    <title>1备份 2</title>
+    <g id="1备份-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形" fill="#061A35" cx="24" cy="24" r="22"></circle>
+        <g id="编组" transform="translate(12.000000, 13.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="3">
+            <path d="M12,0 L12,17 M12,17 L5,8.42857143 M12,17 L19,8.42857143" id="形状" stroke-linejoin="round"></path>
+            <line x1="0" y1="20.5" x2="24" y2="20.5" id="路径"></line>
         </g>
     </g>
 </svg>
