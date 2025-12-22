@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="57px" viewBox="0 0 51 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-团购</title>
+    <defs>
+        <filter x="-104.3%" y="-62.1%" width="308.7%" height="265.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.160647946 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FF3D40" offset="0%"></stop>
+            <stop stop-color="#FF5555" offset="50%"></stop>
+            <stop stop-color="#E94B5A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFD700" offset="0%"></stop>
+            <stop stop-color="#E6AC00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#2ECC71" offset="0%"></stop>
+            <stop stop-color="#27AE60" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-219.000000, -15.000000)">
+            <g id="icon-团购" transform="translate(222.000000, 17.000000)">
+                <circle id="椭圆形" fill="#FFE5E5" fill-rule="nonzero" cx="22" cy="22" r="22"></circle>
+                <g id="编组-3" filter="url(#filter-1)" transform="translate(11.000000, 6.000000)">
+                    <g id="编组" transform="translate(0.000000, 8.000000)">
+                        <path d="M1.38,0 L21.62,0 C22.382153,0 23,0.62680135 23,1.4 L23,19.6 C23,20.3731986 22.382153,21 21.62,21 L1.38,21 C0.617847045,21 0,20.3731986 0,19.6 L0,1.4 C0,0.62680135 0.617847045,0 1.38,0 Z" id="矩形" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                        <image id="矩形" x="6.9" y="0.7" width="8.05" height="11.6666667" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAyCAYAAADWU2JnAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAI6ADAAQAAAABAAAAMgAAAADlPP2VAAACNElEQVRYCe1Z0U7EMAxjiP9/5mOBEd8wm83aNFfuAIlIa7fFsZ3cpiGxrOv6/LDHGqdLHNgRPMeOyPIbqr1265+i7qVd+8WMQ53c86VrmHmNo9V5RjY7OWmGZiiakRP3XbvouZlZESEPMuk8I6cZkCCy4imx4O/W08zFSQYm6Fa7m7mVzhDvv5nWmP7UZPzt6r4N0bHnW0PgfeG/92REnI64wwy+TehoJLpkQeCTcbznRZOToRkvFvCJmOer16IHM29x4CbCnQt4IH8hKSyix8mwviouZCTp7F1+muFknCcTc3KvL13DzPEBrpK7Wa/3vJsTPCeDorMQcACc3PPOkeElTzNOwmsBx81ZcfKe7jQDUcSsWGa+m6eZzcoPr7Nmup1We5s1U9Xr4v/NtMaTTcbfLn9GWryj94U/MzNKOooT8SiS5mDm+DnISJ3M8UIeScd7Xuo5GYAQXrzd3dcu2Q4bPhM9mMHfM60QcIDcTDXvOsLHyRBUJRcykly70wxMIKrkbn5j2Vfn6+Jh5vgAd8G7xudZJub5z8KPE9HjZFB0FgIOgJN73jkyvORpxkl4LeC4OStO3tOdZiCKmBXLzHfzNLNZ+eH1V5vpjvGKwZX4ZidTEsuamTWT8ZfyNIO3CJF1Ws1vrO1V3l6aacPvmIGZ4+egKi2dRfHU5DgZkCAy8g11o5VmSF/tzM2TZ3Q/6q38mR4/qp38CB4VuBb3dvl54h9glz1YquJu3o04XxO/LMv6DstIJdPXIMhOAAAAAElFTkSuQmCC"></image>
+                        <path d="M0,15.1666667 L23,15.1666667 L23,20 C23,20.5522847 22.5522847,21 22,21 L1,21 C0.44771525,21 -6.32316127e-16,20.5522847 0,20 L0,15.1666667 L0,15.1666667 Z" id="矩形" fill="#000000" fill-rule="nonzero" opacity="0.1"></path>
+                    </g>
+                    <image id="矩形" x="0" y="8" width="23" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAADCAYAAABlE6q2AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAZKADAAQAAAABAAAAAwAAAAAEqXUcAAAAL0lEQVQ4EWP8//+/OQMDgxgQj4KBD4FXTEA3jEbGwEcEzAVioAh5BeON0gMeAi8BMhkGOdIQzFAAAAAASUVORK5CYII="></image>
+                    <g id="编组" transform="translate(2.000000, 0.000000)" fill="url(#linearGradient-3)" fill-rule="nonzero">
+                        <path d="M9,0 C15.0237164,0 18,3.87488944 18,10.0833333 C18,10.5895944 17.5758487,11 17.0526316,11 C16.5294144,11 16.1052632,10.5895944 16.1052632,10.0833333 C16.1052632,4.78935959 13.8347539,1.83333333 9,1.83333333 C4.34438538,1.83333333 1.89473684,4.93565786 1.89473684,10.0833333 C1.89473684,10.5895944 1.47058555,11 0.947368421,11 C0.42415129,11 0,10.5895944 0,10.0833333 C0,4.01434306 3.16979398,0 9,0 Z" id="路径"></path>
+                    </g>
+                </g>
+                <circle id="椭圆形" fill="#FFD700" fill-rule="nonzero" cx="9.80434783" cy="15.0652174" r="1"></circle>
+                <circle id="椭圆形" fill="#00A2FF" fill-rule="nonzero" cx="21.7608696" cy="37.5434783" r="1"></circle>
+                <circle id="椭圆形" fill="#FF6B6B" fill-rule="nonzero" cx="5.17391304" cy="20.826087" r="1.43478261"></circle>
+                <circle id="椭圆形备份" fill="#C46BFF" fill-rule="nonzero" cx="36.826087" cy="14.6521739" r="1.43478261"></circle>
+                <circle id="椭圆形" fill="#2ECC71" fill-rule="nonzero" cx="10.4782609" cy="35.3913043" r="1.43478261"></circle>
+                <g id="编组" transform="translate(22.000000, 26.000000)" fill-rule="nonzero">
+                    <path d="M7.5,11 C11.6421356,11 15,10.6935411 15,6.30157365 C15,1.90960623 11.6421356,1 7.5,1 C3.35786438,1 0,1.90960623 0,6.30157365 C0,10.6935411 3.35786438,11 7.5,11 Z" id="椭圆形" fill="url(#linearGradient-4)"></path>
+                    <ellipse id="椭圆形" fill="#FFFFFF" opacity="0.35" cx="10" cy="1.5" rx="2" ry="1.5"></ellipse>
+                    <path d="M3.79036827,5.48227712 L3.79036827,5.98174006 L5.08555241,5.98174006 C4.7388102,6.48657358 4.27478754,6.88936627 3.69348442,7.19011815 L3.97903683,7.6895811 C4.58073654,7.30290011 5.07025496,6.78732546 5.44759207,6.14285714 L5.44759207,7.34049409 C5.44759207,7.48012889 5.39150142,7.55531686 5.28441926,7.55531686 C5.11104816,7.55531686 4.93767705,7.53920516 4.75410765,7.51772288 L4.86628895,8.03329753 L5.45779037,8.03329753 C5.78413598,8.03329753 5.95240793,7.8453276 5.95240793,7.48012889 L5.95240793,5.98174006 L6.5286119,5.98174006 L6.5286119,5.48227712 L5.95240793,5.48227712 L5.95240793,4.90225564 L5.44759207,4.90225564 L5.44759207,5.48227712 L3.79036827,5.48227712 Z M7.26288952,4.19871106 L3,4.19871106 L3,8.98925886 L3.50991501,8.98925886 L3.50991501,8.80128894 L6.7529745,8.80128894 L6.7529745,8.98925886 L7.26288952,8.98925886 L7.26288952,4.19871106 Z M3.50991501,8.29645542 L3.50991501,4.70354458 L6.7529745,4.70354458 L6.7529745,8.29645542 L3.50991501,8.29645542 Z M9.73654391,5.01503759 L9.73654391,6.77658432 C9.72124646,7.37808808 9.63456091,7.86143931 9.47648725,8.22126745 C9.32351275,8.55961332 9.07365439,8.81740064 8.72691218,9 L8.44645892,8.53276047 C8.77280453,8.35553169 8.99716714,8.13533835 9.10934844,7.87755102 C9.22152975,7.59291085 9.28271955,7.22771214 9.298017,6.77658432 L9.298017,5.01503759 L9.73654391,5.01503759 Z M9.96090652,7.74865736 C10.2362606,8.02255639 10.4657224,8.29108485 10.6594901,8.55424275 L10.2770538,8.95703545 C10.1240793,8.68850698 9.90481586,8.40386681 9.61926346,8.09774436 Z M11.0215297,4 L11.5365439,4.0698174 C11.4957507,4.30075188 11.4396601,4.52094522 11.3784703,4.73039742 L13,4.73039742 C13,6.64232009 12.9745042,7.82384533 12.9286119,8.27497315 C12.8776204,8.71535983 12.6430595,8.94092374 12.2249292,8.94092374 C12.082153,8.94092374 11.8373938,8.9301826 11.4804533,8.91407089 L11.3529745,8.41460795 C11.6589235,8.43071966 11.9240793,8.44146079 12.1484419,8.44146079 C12.3116147,8.44146079 12.4033994,8.30719656 12.4339943,8.04940924 C12.4594901,7.78625134 12.4747875,6.86251343 12.4798867,5.27282492 L11.1796034,5.27282492 C11.0368272,5.58968851 10.8685552,5.87432868 10.6747875,6.12674544 L10.4453258,5.80988185 L10.4453258,7.62513426 L9.97620397,7.62513426 L9.97620397,4.69817401 L9.07365439,4.69817401 L9.07365439,7.62513426 L8.59433428,7.62513426 L8.59433428,4.18259936 L10.4453258,4.18259936 L10.4453258,5.55209452 C10.7206799,5.11707841 10.9144476,4.60150376 11.0215297,4 Z M11.2203966,5.63802363 L11.7048159,5.81525242 C11.5212465,6.38990333 11.3325779,6.8839957 11.1388102,7.29752954 C11.3529745,7.27067669 11.5569405,7.23308271 11.7609065,7.18474758 C11.6997167,6.97529538 11.6334278,6.77658432 11.572238,6.59398496 L11.9750708,6.38990333 C12.1229462,6.80880773 12.2657224,7.26530612 12.4084986,7.76476907 L11.9750708,7.99570354 C11.9444759,7.86680988 11.913881,7.74865736 11.8832861,7.63050483 C11.505949,7.71643394 11.0929178,7.78088077 10.6441926,7.8292159 L10.5575071,7.34049409 C10.7104816,7.2867884 10.929745,6.72287863 11.2203966,5.63802363 Z" id="形状结合" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
